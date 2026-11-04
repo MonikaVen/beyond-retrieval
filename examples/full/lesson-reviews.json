@@ -1,0 +1,9 @@
+{
+  "251b9d7471bae2598ee19d6a": {
+    "reviewer_id": "synthetic-example-author",
+    "approved": true,
+    "generalizable": true,
+    "no_case_answers": true,
+    "scope": "Illustrative self-authored lesson; not a real-model discovery"
+  }
+}

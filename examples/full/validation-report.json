@@ -1,0 +1,15 @@
+{
+  "sample_evidence_hash": "2f45dcb3aeaf3a0a80c1ea3f48e219b231659632183925b46be19a2bdd830ad9",
+  "mock_http": {
+    "status": "passed",
+    "scope": "HTTP transport against deterministic mock; not live inference"
+  },
+  "docker": {
+    "status": "blocked",
+    "reason": "Docker executable unavailable"
+  },
+  "live_model": {
+    "status": "blocked",
+    "reason": "No model endpoint/config supplied"
+  }
+}

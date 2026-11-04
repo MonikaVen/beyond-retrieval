@@ -1,0 +1,13 @@
+{
+  "id": "sample-V4",
+  "base_case_id": "sample-login",
+  "environment": "fictional-dev",
+  "variant": "V4",
+  "question": "Investigate login activity. Which outcomes are observed, and is malicious intent established?",
+  "public_context": {},
+  "events": "events.jsonl",
+  "evidence_hash": "e795c7572f2501f7fc293501dcc72702aca04fa20dcedb568c0cb5985eb70013",
+  "curation": {
+    "status": "approved"
+  }
+}

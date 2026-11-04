@@ -1,0 +1,3 @@
+{"timestamp": "2026-01-01T00:00:00Z", "host": "host-a", "event": "failed_login", "user": "bob"}
+{"timestamp": "2026-01-01T00:01:00Z", "host": "host-a", "event": "login_success", "user": "bob"}
+{"timestamp": "2026-01-01T00:02:00Z", "host": "host-a", "event": "heartbeat"}

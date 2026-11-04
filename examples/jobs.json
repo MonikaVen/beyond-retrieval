@@ -1,0 +1,170 @@
+[
+  {
+    "case": "curated/case.json",
+    "arm": "A",
+    "model": "backbone-1",
+    "repeat": 0,
+    "run_id": "18fed0304eaff5d37cd9"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "A",
+    "model": "backbone-1",
+    "repeat": 1,
+    "run_id": "2a0f881072bffc44d1ba"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "A",
+    "model": "backbone-1",
+    "repeat": 2,
+    "run_id": "99de0e4cf091888cace4"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "A",
+    "model": "backbone-2",
+    "repeat": 0,
+    "run_id": "485da5382b847ef9c77e"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "A",
+    "model": "backbone-2",
+    "repeat": 1,
+    "run_id": "5c180a09eb225e05f3b5"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "A",
+    "model": "backbone-2",
+    "repeat": 2,
+    "run_id": "c466207a0a7480a866ee"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "H",
+    "model": "backbone-1",
+    "repeat": 0,
+    "run_id": "fb421018bf576be23b2c"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "H",
+    "model": "backbone-1",
+    "repeat": 1,
+    "run_id": "ad569761f5d1e1b778e6"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "H",
+    "model": "backbone-1",
+    "repeat": 2,
+    "run_id": "8dfca66797cc30d3ffb9"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "H",
+    "model": "backbone-2",
+    "repeat": 0,
+    "run_id": "911f2aa2ef9bcca8f655"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "H",
+    "model": "backbone-2",
+    "repeat": 1,
+    "run_id": "d8b09c4f2d2886b621c0"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "H",
+    "model": "backbone-2",
+    "repeat": 2,
+    "run_id": "b10ba5ab5db71900c995"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "AS",
+    "model": "backbone-1",
+    "repeat": 0,
+    "run_id": "8e1477040d21158a2b0c"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "AS",
+    "model": "backbone-1",
+    "repeat": 1,
+    "run_id": "1ed301c3e910da70cf32"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "AS",
+    "model": "backbone-1",
+    "repeat": 2,
+    "run_id": "0c6eb9fd715cd727f1b2"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "AS",
+    "model": "backbone-2",
+    "repeat": 0,
+    "run_id": "41f3a732ae43f2c9355b"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "AS",
+    "model": "backbone-2",
+    "repeat": 1,
+    "run_id": "13ae16dd225013820f87"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "AS",
+    "model": "backbone-2",
+    "repeat": 2,
+    "run_id": "9a08307b10181abd7163"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "HS",
+    "model": "backbone-1",
+    "repeat": 0,
+    "run_id": "81aed1c3baa944ebeed0"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "HS",
+    "model": "backbone-1",
+    "repeat": 1,
+    "run_id": "c7026abeeee28d423f3e"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "HS",
+    "model": "backbone-1",
+    "repeat": 2,
+    "run_id": "1010adde7f6b29bd13e9"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "HS",
+    "model": "backbone-2",
+    "repeat": 0,
+    "run_id": "24fdb51ce843e8652ccf"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "HS",
+    "model": "backbone-2",
+    "repeat": 1,
+    "run_id": "04b2661a2d590539da55"
+  },
+  {
+    "case": "curated/case.json",
+    "arm": "HS",
+    "model": "backbone-2",
+    "repeat": 2,
+    "run_id": "45d1d1475090db5e7a90"
+  }
+]

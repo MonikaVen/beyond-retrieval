@@ -1,0 +1,57 @@
+{
+  "nodes": [
+    {
+      "id": "h1",
+      "type": "hypothesis",
+      "text": "Credential attack",
+      "status": "unresolved",
+      "evidence_ids": []
+    },
+    {
+      "id": "h2",
+      "type": "hypothesis",
+      "text": "User error",
+      "status": "unresolved",
+      "evidence_ids": []
+    },
+    {
+      "id": "action_s0_step0",
+      "type": "action",
+      "text": "{\"kind\": \"tool\", \"tool\": \"search_events\", \"args\": {\"contains\": \"failed_login\"}, \"contract\": {\"hypothesis_ids\": [\"h1\", \"h2\"], \"question\": \"Which login events are observed?\", \"hypotheses\": [\"Credential attack\", \"User error\"], \"predictions\": [\"Repeated failures followed by suspicious actions\", \"Isolated failures without corroboration\"]}}",
+      "status": "open",
+      "evidence_ids": []
+    },
+    {
+      "id": "o1",
+      "type": "observation",
+      "text": "A failed login is recorded",
+      "status": "open",
+      "evidence_ids": [
+        "ee3fb7771c9f2467f737d980"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "action_s0_step0",
+      "target": "h1",
+      "relation": "tests"
+    },
+    {
+      "source": "action_s0_step0",
+      "target": "h2",
+      "relation": "tests"
+    },
+    {
+      "source": "o1",
+      "target": "h1",
+      "relation": "supports"
+    },
+    {
+      "source": "o1",
+      "target": "h2",
+      "relation": "supports"
+    }
+  ],
+  "semantic_status": "unverified_agent_assertions"
+}

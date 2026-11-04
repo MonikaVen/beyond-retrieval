@@ -1,0 +1,44 @@
+{
+  "case_id": "sample-V1",
+  "split": "dev",
+  "scenario_group": "fictional-authentication",
+  "rubric": {
+    "mandatory": {
+      "failed_login_user": "bob",
+      "successful_login_user": "bob"
+    },
+    "support": {
+      "failed_login_user": [
+        "ee3fb7771c9f2467f737d980"
+      ],
+      "successful_login_user": [
+        "70e7497e5798fc14e61a2401"
+      ]
+    },
+    "admissible_verdicts": [
+      "insufficient_evidence"
+    ],
+    "unique_label": "insufficient_evidence"
+  },
+  "provisional_rubric": null,
+  "review": {
+    "reviewer_id": "synthetic-fixture-author",
+    "review_scope": "Self-authored fictional example, not independent benchmark review",
+    "telemetry_only": true,
+    "label_alignment": true,
+    "public_prompt_no_answers": true,
+    "scenario_independence": true,
+    "rubric_support": true,
+    "renaming_preserves_semantics": true
+  },
+  "required_checks": [
+    "telemetry_only",
+    "label_alignment",
+    "public_prompt_no_answers",
+    "scenario_independence",
+    "rubric_support",
+    "renaming_preserves_semantics"
+  ],
+  "evidence_hash": "3afe95c1560c34a034160b942f213eb6b56edced8b35cefbf335b22cf5cdcbd2",
+  "case_hash": "3ae634e0f1cda0c7cda6caa16f93bf604c87a5d62f8af0c5a8fb6657fbbef2d5"
+}

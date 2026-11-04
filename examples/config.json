@@ -1,0 +1,11 @@
+{
+  "arm": "A",
+  "endpoint": "http://127.0.0.1:8080/v1/chat/completions",
+  "model": "REPLACE_WITH_FROZEN_MODEL_ID",
+  "repeat": 0,
+  "max_calls": 40,
+  "max_tokens": 30000,
+  "max_seconds": 1200,
+  "max_steps": 80,
+  "replay": false
+}

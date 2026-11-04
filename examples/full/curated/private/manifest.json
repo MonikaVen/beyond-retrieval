@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "input_manifest_hash": "370b8836b8c76372be82c87b5b9c1303801dcc5cde9a91c0844b89c1aed395b2",
+  "sources": [
+    {
+      "id": "auth",
+      "dataset": "generic",
+      "environment": "fictional-dev",
+      "version": "synthetic-1",
+      "license": "CC0-1.0",
+      "url": "urn:synthetic:beyond-retrieval:full-samples",
+      "sha256": "57c0980e401b0c16879b2939dfb14afeb1e782391e8698c18c5b562a4d458b5a"
+    }
+  ],
+  "cases": [
+    {
+      "id": "sample-V0",
+      "split": "dev",
+      "status": "approved",
+      "case_hash": "a6250bd782a8fa26cbd6dcc48e28a18c5a8f320821510b5d8740ab0c1f16fe10",
+      "private_hash": "7c1e0759592fd5820dffe7f74edbf26bd5e16265e40dc76f3ac660b6c8107eef",
+      "records": 2
+    },
+    {
+      "id": "sample-V1",
+      "split": "dev",
+      "status": "approved",
+      "case_hash": "3ae634e0f1cda0c7cda6caa16f93bf604c87a5d62f8af0c5a8fb6657fbbef2d5",
+      "private_hash": "4523275a6514c7711aa7a440efc20dca82f1de5a0b557e1823e2e289c3c5051a",
+      "records": 2
+    },
+    {
+      "id": "sample-V2",
+      "split": "dev",
+      "status": "approved",
+      "case_hash": "37e4abba4ee138b08cc7ccda56a6b60cb483c6b4c417852b4346d8c1612d237a",
+      "private_hash": "6427176c4fe710a1ab58cc3ec1dce06abbcd0728d971968f755310b27a501fc0",
+      "records": 3
+    },
+    {
+      "id": "sample-V4",
+      "split": "dev",
+      "status": "approved",
+      "case_hash": "f3e8724d7681d56754a165d6c7c38c53f94aa4538198b39d3237493042288d05",
+      "private_hash": "c60f27432dedf7ffb2529ff3d414bb0cf8b12b44dd30666cea2ee3ac8c0bfb9b",
+      "records": 1
+    },
+    {
+      "id": "sample-V5",
+      "split": "dev",
+      "status": "approved",
+      "case_hash": "d9c30cb5718be4569846ba92b0284214c649422b88aba7e7a9432437bcb05523",
+      "private_hash": "7e5b4a4d13014133244bacc30f1ded826a76c811419aaa5a030921bedcdda9ad",
+      "records": 2
+    }
+  ]
+}

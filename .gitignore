@@ -1,0 +1,45 @@
+# Large / downloaded experiment data (keep local only)
+datasets/
+datasets/**
+
+# Local experiment outputs
+demo-output/
+demo-output-*/
+demo-output-results/
+live-output/
+/results/
+ui/results/data.json
+ui/results/data.js
+curated-demo/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+*.egg
+
+# Secrets / env
+.env
+.env.*
+!.env.example
+EXPERIMENT_API_KEY
+*.pem
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Test / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/

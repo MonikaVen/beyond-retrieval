@@ -1,0 +1,346 @@
+{
+  "case_id": "lesson-development-example",
+  "base_case_id": "lesson-development-example",
+  "environment": "fictional-dev",
+  "variant": "V0",
+  "evidence_hash": "2f45dcb3aeaf3a0a80c1ea3f48e219b231659632183925b46be19a2bdd830ad9",
+  "config": {
+    "arm": "HS",
+    "model": "scripted-synthetic-fixture",
+    "max_calls": 8,
+    "max_tokens": 100,
+    "max_seconds": 10
+  },
+  "config_hash": "79202ae0f10add3a85e834bb9dc00b240d8633f7b23def4c2607c7b63a61d787",
+  "graph": {
+    "nodes": [
+      {
+        "id": "h1",
+        "type": "hypothesis",
+        "text": "Credential attack",
+        "status": "unresolved",
+        "evidence_ids": []
+      },
+      {
+        "id": "h2",
+        "type": "hypothesis",
+        "text": "User error",
+        "status": "unresolved",
+        "evidence_ids": []
+      },
+      {
+        "id": "action_s0_step0",
+        "type": "action",
+        "text": "{\"kind\": \"tool\", \"tool\": \"search_events\", \"args\": {\"contains\": \"failed_login\"}, \"contract\": {\"hypothesis_ids\": [\"h1\", \"h2\"], \"question\": \"Which login events are observed?\", \"hypotheses\": [\"Credential attack\", \"User error\"], \"predictions\": [\"Repeated failures followed by suspicious actions\", \"Isolated failures without corroboration\"]}}",
+        "status": "open",
+        "evidence_ids": []
+      },
+      {
+        "id": "o1",
+        "type": "observation",
+        "text": "A failed login is recorded",
+        "status": "open",
+        "evidence_ids": [
+          "ee3fb7771c9f2467f737d980"
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "action_s0_step0",
+        "target": "h1",
+        "relation": "tests"
+      },
+      {
+        "source": "action_s0_step0",
+        "target": "h2",
+        "relation": "tests"
+      },
+      {
+        "source": "o1",
+        "target": "h1",
+        "relation": "supports"
+      },
+      {
+        "source": "o1",
+        "target": "h2",
+        "relation": "supports"
+      }
+    ],
+    "semantic_status": "unverified_agent_assertions"
+  },
+  "graph_history": [
+    {
+      "stage": 0,
+      "patch": {
+        "nodes": [
+          {
+            "id": "h1",
+            "type": "hypothesis",
+            "text": "Credential attack",
+            "status": "open",
+            "evidence_ids": []
+          },
+          {
+            "id": "h2",
+            "type": "hypothesis",
+            "text": "User error",
+            "status": "open",
+            "evidence_ids": []
+          }
+        ],
+        "edges": []
+      },
+      "state_hash": "fa19d6f7fde250e2ca1c56b687989d03d8f79b8482af12635a750726b6893457"
+    },
+    {
+      "stage": 0,
+      "patch": {
+        "nodes": [
+          {
+            "id": "action_s0_step0",
+            "type": "action",
+            "text": "{\"kind\": \"tool\", \"tool\": \"search_events\", \"args\": {\"contains\": \"failed_login\"}, \"contract\": {\"hypothesis_ids\": [\"h1\", \"h2\"], \"question\": \"Which login events are observed?\", \"hypotheses\": [\"Credential attack\", \"User error\"], \"predictions\": [\"Repeated failures followed by suspicious actions\", \"Isolated failures without corroboration\"]}}",
+            "status": "open",
+            "evidence_ids": []
+          }
+        ],
+        "edges": [
+          {
+            "source": "action_s0_step0",
+            "target": "h1",
+            "relation": "tests"
+          },
+          {
+            "source": "action_s0_step0",
+            "target": "h2",
+            "relation": "tests"
+          }
+        ]
+      },
+      "state_hash": "5cff05df9518f3734cf530810935d272818176636e9a3d70f42f115d5199a225"
+    },
+    {
+      "stage": 0,
+      "patch": {
+        "nodes": [
+          {
+            "id": "h1",
+            "type": "hypothesis",
+            "text": "Credential attack",
+            "status": "unresolved",
+            "evidence_ids": []
+          },
+          {
+            "id": "h2",
+            "type": "hypothesis",
+            "text": "User error",
+            "status": "unresolved",
+            "evidence_ids": []
+          },
+          {
+            "id": "o1",
+            "type": "observation",
+            "text": "A failed login is recorded",
+            "status": "open",
+            "evidence_ids": [
+              "ee3fb7771c9f2467f737d980"
+            ]
+          }
+        ],
+        "edges": [
+          {
+            "source": "o1",
+            "target": "h1",
+            "relation": "supports"
+          },
+          {
+            "source": "o1",
+            "target": "h2",
+            "relation": "supports"
+          }
+        ]
+      },
+      "state_hash": "ebc594bdfe08d2d83e82554dd009ab24a873047346485b1b328969336e0e0b5e"
+    }
+  ],
+  "lesson_bank_hash": null,
+  "retrieved_lessons": [],
+  "completion_tokens": 2,
+  "tool_calls": 1,
+  "stages": [
+    {
+      "stage": 0,
+      "status": "completed",
+      "answer": {
+        "verdict": "insufficient_evidence",
+        "probabilities": {
+          "malicious": 0.2,
+          "benign": 0.2,
+          "insufficient_evidence": 0.6
+        },
+        "findings": [
+          {
+            "key": "failed_login",
+            "value": true,
+            "evidence_ids": [
+              "ee3fb7771c9f2467f737d980"
+            ]
+          }
+        ],
+        "unresolved": [
+          "Intent unknown"
+        ]
+      }
+    }
+  ],
+  "trace": [
+    {
+      "stage": 0,
+      "action": {
+        "kind": "tool",
+        "tool": "search_events",
+        "args": {
+          "contains": "failed_login"
+        },
+        "contract": {
+          "hypothesis_ids": [
+            "h1",
+            "h2"
+          ],
+          "question": "Which login events are observed?",
+          "hypotheses": [
+            "Credential attack",
+            "User error"
+          ],
+          "predictions": [
+            "Repeated failures followed by suspicious actions",
+            "Isolated failures without corroboration"
+          ]
+        },
+        "graph_update": {
+          "nodes": [
+            {
+              "id": "h1",
+              "type": "hypothesis",
+              "text": "Credential attack",
+              "status": "open",
+              "evidence_ids": []
+            },
+            {
+              "id": "h2",
+              "type": "hypothesis",
+              "text": "User error",
+              "status": "open",
+              "evidence_ids": []
+            }
+          ],
+          "edges": []
+        }
+      },
+      "completion_tokens": 1,
+      "graph_hash": "fa19d6f7fde250e2ca1c56b687989d03d8f79b8482af12635a750726b6893457",
+      "result": {
+        "records": [
+          {
+            "id": "ee3fb7771c9f2467f737d980",
+            "dataset": "generic",
+            "environment": "fictional-dev",
+            "source": "auth",
+            "timestamp": "2026-01-01T00:00:00Z",
+            "fields": {
+              "timestamp": "2026-01-01T00:00:00Z",
+              "host": "host-a",
+              "event": "failed_login",
+              "user": "bob"
+            },
+            "raw": "{\"timestamp\": \"2026-01-01T00:00:00Z\", \"host\": \"host-a\", \"event\": \"failed_login\", \"user\": \"bob\"}",
+            "origin": {
+              "sha256": "57c0980e401b0c16879b2939dfb14afeb1e782391e8698c18c5b562a4d458b5a",
+              "index": 1,
+              "index_type": "original_line"
+            },
+            "parse_status": "structured"
+          }
+        ],
+        "total": 1,
+        "truncated": false,
+        "next_offset": null
+      }
+    },
+    {
+      "stage": 0,
+      "action": {
+        "kind": "final",
+        "graph_update": {
+          "nodes": [
+            {
+              "id": "h1",
+              "type": "hypothesis",
+              "text": "Credential attack",
+              "status": "unresolved",
+              "evidence_ids": []
+            },
+            {
+              "id": "h2",
+              "type": "hypothesis",
+              "text": "User error",
+              "status": "unresolved",
+              "evidence_ids": []
+            },
+            {
+              "id": "o1",
+              "type": "observation",
+              "text": "A failed login is recorded",
+              "status": "open",
+              "evidence_ids": [
+                "ee3fb7771c9f2467f737d980"
+              ]
+            }
+          ],
+          "edges": [
+            {
+              "source": "o1",
+              "target": "h1",
+              "relation": "supports"
+            },
+            {
+              "source": "o1",
+              "target": "h2",
+              "relation": "supports"
+            }
+          ]
+        },
+        "answer": {
+          "verdict": "insufficient_evidence",
+          "probabilities": {
+            "malicious": 0.2,
+            "benign": 0.2,
+            "insufficient_evidence": 0.6
+          },
+          "findings": [
+            {
+              "key": "failed_login",
+              "value": true,
+              "evidence_ids": [
+                "ee3fb7771c9f2467f737d980"
+              ]
+            }
+          ],
+          "unresolved": [
+            "Intent unknown"
+          ]
+        },
+        "lesson_candidates": [
+          {
+            "trigger": "Investigate login activity and failed login",
+            "procedure": "Retrieve authentication outcomes and seek independent corroborating activity before attributing malicious intent.",
+            "limitation": "A failed login alone does not distinguish error from attack."
+          }
+        ]
+      },
+      "completion_tokens": 1,
+      "graph_hash": "ebc594bdfe08d2d83e82554dd009ab24a873047346485b1b328969336e0e0b5e"
+    }
+  ]
+}

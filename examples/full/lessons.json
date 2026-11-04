@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "lessons": [
+    {
+      "trigger": "Investigate login activity and failed login",
+      "procedure": "Retrieve authentication outcomes and seek independent corroborating activity before attributing malicious intent.",
+      "limitation": "A failed login alone does not distinguish error from attack.",
+      "id": "251b9d7471bae2598ee19d6a",
+      "source_run_hash": "1075835e9b51061ce27473cbe1d1457954738a8d83724c00790503a99e81a3da",
+      "source_case": "lesson-development-example",
+      "source_base_case": "lesson-development-example",
+      "split": "dev",
+      "status": "approved",
+      "review": {
+        "reviewer_id": "synthetic-example-author",
+        "approved": true,
+        "generalizable": true,
+        "no_case_answers": true,
+        "scope": "Illustrative self-authored lesson; not a real-model discovery"
+      }
+    }
+  ],
+  "hash": "c3f50653563aeba772c3045c79baa77c5efcdaefc68e3d281dc1135ffbbd8c49"
+}

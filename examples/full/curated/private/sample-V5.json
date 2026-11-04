@@ -1,0 +1,59 @@
+{
+  "case_id": "sample-V5",
+  "split": "dev",
+  "scenario_group": "fictional-authentication",
+  "rubric": {
+    "mandatory": {
+      "failed_login_user": "bob",
+      "successful_login_user": "bob"
+    },
+    "support": {
+      "failed_login_user": [
+        "ee3fb7771c9f2467f737d980"
+      ],
+      "successful_login_user": [
+        "70e7497e5798fc14e61a2401"
+      ]
+    },
+    "admissible_verdicts": [
+      "insufficient_evidence"
+    ],
+    "unique_label": "insufficient_evidence"
+  },
+  "provisional_rubric": {
+    "mandatory": {
+      "failed_login_user": "bob"
+    },
+    "support": {
+      "failed_login_user": [
+        "ee3fb7771c9f2467f737d980"
+      ]
+    },
+    "admissible_verdicts": [
+      "insufficient_evidence"
+    ],
+    "unique_label": "insufficient_evidence"
+  },
+  "review": {
+    "reviewer_id": "synthetic-fixture-author",
+    "review_scope": "Self-authored fictional example, not independent benchmark review",
+    "telemetry_only": true,
+    "label_alignment": true,
+    "public_prompt_no_answers": true,
+    "scenario_independence": true,
+    "rubric_support": true,
+    "release_schedule_shared": true,
+    "stage_rubrics_reviewed": true
+  },
+  "required_checks": [
+    "telemetry_only",
+    "label_alignment",
+    "public_prompt_no_answers",
+    "scenario_independence",
+    "rubric_support",
+    "release_schedule_shared",
+    "stage_rubrics_reviewed"
+  ],
+  "evidence_hash": "983c21663d0ef506900585d34ad1a41a0398f882a8fbc4f1a4b83c93ccd72ac6",
+  "case_hash": "d9c30cb5718be4569846ba92b0284214c649422b88aba7e7a9432437bcb05523"
+}

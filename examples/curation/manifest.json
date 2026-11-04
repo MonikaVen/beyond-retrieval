@@ -1,0 +1,60 @@
+{
+  "sources": [
+    {
+      "id": "auth",
+      "dataset": "generic",
+      "environment": "synthetic",
+      "version": "fixture-1",
+      "license": "CC0-1.0",
+      "url": "urn:synthetic:beyond-retrieval:curation-fixture",
+      "sha256": "a19edbf35ea7b74a697b0977902fb4b650168864c9592d38a64ab44533eaaf34",
+      "path": "telemetry.jsonl"
+    }
+  ],
+  "cases": [
+    {
+      "id": "synthetic-v0",
+      "base_case_id": "synthetic",
+      "split": "dev",
+      "scenario_group": "synthetic-login",
+      "variant": "V0",
+      "question": "What does the evidence establish about the login activity?",
+      "evidence": [
+        {
+          "source": "auth",
+          "indices": [
+            1,
+            2
+          ]
+        }
+      ],
+      "rubric": {
+        "mandatory": {
+          "failed_login_user": "bob"
+        },
+        "support": {
+          "failed_login_user": [
+            {
+              "source": "auth",
+              "indices": [
+                1
+              ]
+            }
+          ]
+        },
+        "admissible_verdicts": [
+          "insufficient_evidence"
+        ],
+        "unique_label": "insufficient_evidence"
+      },
+      "review": {
+        "reviewer_id": "",
+        "telemetry_only": false,
+        "label_alignment": false,
+        "public_prompt_no_answers": false,
+        "scenario_independence": false,
+        "rubric_support": false
+      }
+    }
+  ]
+}

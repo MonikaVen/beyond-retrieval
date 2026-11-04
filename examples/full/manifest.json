@@ -1,0 +1,331 @@
+{
+  "sources": [
+    {
+      "id": "auth",
+      "dataset": "generic",
+      "environment": "fictional-dev",
+      "version": "synthetic-1",
+      "license": "CC0-1.0",
+      "url": "urn:synthetic:beyond-retrieval:full-samples",
+      "path": "auth.jsonl",
+      "sha256": "57c0980e401b0c16879b2939dfb14afeb1e782391e8698c18c5b562a4d458b5a"
+    }
+  ],
+  "cases": [
+    {
+      "base_case_id": "sample-login",
+      "split": "dev",
+      "scenario_group": "fictional-authentication",
+      "question": "Investigate login activity. Which outcomes are observed, and is malicious intent established?",
+      "evidence": [
+        {
+          "source": "auth",
+          "indices": [
+            1,
+            2
+          ]
+        }
+      ],
+      "rubric": {
+        "mandatory": {
+          "failed_login_user": "bob",
+          "successful_login_user": "bob"
+        },
+        "support": {
+          "failed_login_user": [
+            {
+              "source": "auth",
+              "indices": [
+                1
+              ]
+            }
+          ],
+          "successful_login_user": [
+            {
+              "source": "auth",
+              "indices": [
+                2
+              ]
+            }
+          ]
+        },
+        "admissible_verdicts": [
+          "insufficient_evidence"
+        ],
+        "unique_label": "insufficient_evidence"
+      },
+      "id": "sample-V0",
+      "variant": "V0",
+      "review": {
+        "reviewer_id": "synthetic-fixture-author",
+        "review_scope": "Self-authored fictional example, not independent benchmark review",
+        "telemetry_only": true,
+        "label_alignment": true,
+        "public_prompt_no_answers": true,
+        "scenario_independence": true,
+        "rubric_support": true
+      }
+    },
+    {
+      "base_case_id": "sample-login",
+      "split": "dev",
+      "scenario_group": "fictional-authentication",
+      "question": "Investigate login activity. Which outcomes are observed, and is malicious intent established?",
+      "evidence": [
+        {
+          "source": "auth",
+          "indices": [
+            1,
+            2
+          ]
+        }
+      ],
+      "rubric": {
+        "mandatory": {
+          "failed_login_user": "bob",
+          "successful_login_user": "bob"
+        },
+        "support": {
+          "failed_login_user": [
+            {
+              "source": "auth",
+              "indices": [
+                1
+              ]
+            }
+          ],
+          "successful_login_user": [
+            {
+              "source": "auth",
+              "indices": [
+                2
+              ]
+            }
+          ]
+        },
+        "admissible_verdicts": [
+          "insufficient_evidence"
+        ],
+        "unique_label": "insufficient_evidence"
+      },
+      "id": "sample-V1",
+      "variant": "V1",
+      "review": {
+        "reviewer_id": "synthetic-fixture-author",
+        "review_scope": "Self-authored fictional example, not independent benchmark review",
+        "telemetry_only": true,
+        "label_alignment": true,
+        "public_prompt_no_answers": true,
+        "scenario_independence": true,
+        "rubric_support": true,
+        "renaming_preserves_semantics": true
+      },
+      "transform": {
+        "mapping": {
+          "host-a": "host-z"
+        }
+      }
+    },
+    {
+      "base_case_id": "sample-login",
+      "split": "dev",
+      "scenario_group": "fictional-authentication",
+      "question": "Investigate login activity. Which outcomes are observed, and is malicious intent established?",
+      "evidence": [
+        {
+          "source": "auth",
+          "indices": [
+            1,
+            2
+          ]
+        }
+      ],
+      "rubric": {
+        "mandatory": {
+          "failed_login_user": "bob",
+          "successful_login_user": "bob"
+        },
+        "support": {
+          "failed_login_user": [
+            {
+              "source": "auth",
+              "indices": [
+                1
+              ]
+            }
+          ],
+          "successful_login_user": [
+            {
+              "source": "auth",
+              "indices": [
+                2
+              ]
+            }
+          ]
+        },
+        "admissible_verdicts": [
+          "insufficient_evidence"
+        ],
+        "unique_label": "insufficient_evidence"
+      },
+      "id": "sample-V2",
+      "variant": "V2",
+      "review": {
+        "reviewer_id": "synthetic-fixture-author",
+        "review_scope": "Self-authored fictional example, not independent benchmark review",
+        "telemetry_only": true,
+        "label_alignment": true,
+        "public_prompt_no_answers": true,
+        "scenario_independence": true,
+        "rubric_support": true,
+        "distractors_unrelated": true
+      },
+      "distractors": [
+        {
+          "source": "auth",
+          "indices": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "base_case_id": "sample-login",
+      "split": "dev",
+      "scenario_group": "fictional-authentication",
+      "question": "Investigate login activity. Which outcomes are observed, and is malicious intent established?",
+      "evidence": [
+        {
+          "source": "auth",
+          "indices": [
+            1,
+            2
+          ]
+        }
+      ],
+      "rubric": {
+        "mandatory": {
+          "failed_login_user": "bob"
+        },
+        "support": {
+          "failed_login_user": [
+            {
+              "source": "auth",
+              "indices": [
+                1
+              ]
+            }
+          ]
+        },
+        "admissible_verdicts": [
+          "insufficient_evidence"
+        ],
+        "unique_label": "insufficient_evidence"
+      },
+      "id": "sample-V4",
+      "variant": "V4",
+      "review": {
+        "reviewer_id": "synthetic-fixture-author",
+        "review_scope": "Self-authored fictional example, not independent benchmark review",
+        "telemetry_only": true,
+        "label_alignment": true,
+        "public_prompt_no_answers": true,
+        "scenario_independence": true,
+        "rubric_support": true,
+        "all_support_routes_removed": true,
+        "ambiguity_reviewed": true
+      },
+      "hide": [
+        {
+          "source": "auth",
+          "indices": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "base_case_id": "sample-login",
+      "split": "dev",
+      "scenario_group": "fictional-authentication",
+      "question": "Investigate login activity. Which outcomes are observed, and is malicious intent established?",
+      "evidence": [
+        {
+          "source": "auth",
+          "indices": [
+            1,
+            2
+          ]
+        }
+      ],
+      "rubric": {
+        "mandatory": {
+          "failed_login_user": "bob",
+          "successful_login_user": "bob"
+        },
+        "support": {
+          "failed_login_user": [
+            {
+              "source": "auth",
+              "indices": [
+                1
+              ]
+            }
+          ],
+          "successful_login_user": [
+            {
+              "source": "auth",
+              "indices": [
+                2
+              ]
+            }
+          ]
+        },
+        "admissible_verdicts": [
+          "insufficient_evidence"
+        ],
+        "unique_label": "insufficient_evidence"
+      },
+      "id": "sample-V5",
+      "variant": "V5",
+      "review": {
+        "reviewer_id": "synthetic-fixture-author",
+        "review_scope": "Self-authored fictional example, not independent benchmark review",
+        "telemetry_only": true,
+        "label_alignment": true,
+        "public_prompt_no_answers": true,
+        "scenario_independence": true,
+        "rubric_support": true,
+        "release_schedule_shared": true,
+        "stage_rubrics_reviewed": true
+      },
+      "initial_evidence": [
+        {
+          "source": "auth",
+          "indices": [
+            1
+          ]
+        }
+      ],
+      "provisional_rubric": {
+        "mandatory": {
+          "failed_login_user": "bob"
+        },
+        "support": {
+          "failed_login_user": [
+            {
+              "source": "auth",
+              "indices": [
+                1
+              ]
+            }
+          ]
+        },
+        "admissible_verdicts": [
+          "insufficient_evidence"
+        ],
+        "unique_label": "insufficient_evidence"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"cases":["curated/case.json"],"arms":["A","H","AS","HS"],"models":["backbone-1","backbone-2"],"repeats":3}

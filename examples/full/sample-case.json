@@ -1,0 +1,8 @@
+{
+  "id": "lesson-development-example",
+  "base_case_id": "lesson-development-example",
+  "environment": "fictional-dev",
+  "question": "Investigate login activity. Which outcomes are observed, and is malicious intent established?",
+  "events": "sample-events.jsonl",
+  "evidence_hash": "2f45dcb3aeaf3a0a80c1ea3f48e219b231659632183925b46be19a2bdd830ad9"
+}
